@@ -1,26 +1,215 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Generic section background choices - pick one per section. Deliberately
+     unnamed by hue so the palette can be re-themed without renaming call sites. */
+  --background-1: #ffffff;
+  --background-2: #000412;
+  --background-3: #f1f5f9;
+
+  /* Navbar and footer always share this background, independent of the
+     section choices above. */
+  --background-nav: #000412;
+
+  /* Team highlight section's gradient endpoints. */
+  --background-grad-start: #e0e0e0;
+  --background-grad-end: #808080;
+
+  /* Hero section's gradient endpoints. */
+  --hero-grad-start: #0c1f38;
+  --hero-grad-end: #000208;
+
+  /* General page text - pick light text on a dark background, dark text on
+     a light one. Not used by the navbar/footer, which have their own scheme. */
+  --text-light: #ffffff;
+  --text-dark: #000412;
+
+  /* Brand palette for the homepage template */
+  --color-ink: var(--background-2);
+  --color-paper: var(--background-1);
+  --color-muted: #5b6e77;
+  --accent: #fdc60c;
+  --color-highlight: #05b1e6;
+  --color-highlight2: #9132fe;
+  --color-highlight3: #b50081;
+
+  /* Navbar/footer text - kept independent of --text-light/--text-dark above.
+     color-nav-1 is the default; color-nav-2 is used on hover. color-nav-3 is
+     reserved for future use. */
+  --color-nav-1: #ffffff;
+  --color-nav-2: var(--accent);
+  --color-nav-3: var(--color-muted);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background-1: var(--background-1);
+  --color-background-2: var(--background-2);
+  --color-background-3: var(--background-3);
+  --color-background-nav: var(--background-nav);
+  --color-background-grad-start: var(--background-grad-start);
+  --color-background-grad-end: var(--background-grad-end);
+  --color-hero-grad-start: var(--hero-grad-start);
+  --color-hero-grad-end: var(--hero-grad-end);
+  --color-text-light: var(--text-light);
+  --color-text-dark: var(--text-dark);
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+  --color-muted: var(--color-muted);
+  --color-accent: var(--accent);
+  --color-highlight: var(--color-highlight);
+  --color-highlight2: var(--color-highlight2);
+  --color-highlight3: var(--color-highlight3);
+  --color-nav-1: var(--color-nav-1);
+  --color-nav-2: var(--color-nav-2);
+  --color-nav-3: var(--color-nav-3);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  /* Whatever shows through a section's notch cutout is whatever paints
+     behind it - tied explicitly to background-1 here and on body, rather
+     than left to coincide with body's color by accident. */
+  background: var(--background-1);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Pinned to our own tokens rather than following OS/browser dark-mode
+     preference - the design here is fully authored, not auto-themed, so
+     the page background (including what shows through notch cutouts)
+     should always be background-1, never flip dark on the user's system. */
+  background: var(--background-1);
+  color: var(--text-dark);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Infinite logo marquee */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* Notched-corner panel treatment, ported from the reference site's clip-path pattern */
+.notch-top-right {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 3rem) 0,
+    100% 3rem,
+    100% 100%,
+    0 100%
+  );
+}
+
+.notch-top-left {
+  clip-path: polygon(
+    0 3rem,
+    3rem 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.notch-bottom-left {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    3rem 100%,
+    0 calc(100% - 3rem)
+  );
+}
+
+.notch-bottom-right {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 3rem),
+    calc(100% - 3rem) 100%,
+    0 100%
+  );
+}
+
+/* Larger section-level notches - same 45deg angle as the panel notches
+   above (equal-length legs), but with 3x the cut area of the original
+   3rem panel notch (leg length scaled by sqrt(3)). Kept as separate
+   classes so enlarging these doesn't also enlarge the panel/image
+   notches that share the same corner. */
+.notch-top-right-lg {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 5.1962rem) 0,
+    100% 5.1962rem,
+    100% 100%,
+    0 100%
+  );
+}
+
+.notch-top-left-lg {
+  clip-path: polygon(
+    0 5.1962rem,
+    5.1962rem 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+.notch-bottom-left-lg {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    5.1962rem 100%,
+    0 calc(100% - 5.1962rem)
+  );
+}
+
+.notch-bottom-right-lg {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 5.1962rem),
+    calc(100% - 5.1962rem) 100%,
+    0 100%
+  );
+}
+
+.notch-top-left-bottom-right {
+  clip-path: polygon(
+    0 3rem,
+    3rem 0,
+    100% 0,
+    100% calc(100% - 3rem),
+    calc(100% - 3rem) 100%,
+    0 100%
+  );
+}
+
+.notch-all {
+  clip-path: polygon(
+    0 1.25rem,
+    1.25rem 0,
+    calc(100% - 1.25rem) 0,
+    100% 1.25rem,
+    100% calc(100% - 1.25rem),
+    calc(100% - 1.25rem) 100%,
+    1.25rem 100%,
+    0 calc(100% - 1.25rem)
+  );
 }

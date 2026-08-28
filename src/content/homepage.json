@@ -1,0 +1,323 @@
+{
+  "navbar": {
+    "logoImage": "/assets/logo.svg",
+    "logoAlt": "Your Company logo",
+    "companyName": "Your Company",
+    "ctaLabel": "Contact us"
+  },
+  "hero": {
+    "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "subheadline": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "tags": [
+      "Lorem Ipsum",
+      "Dolor Sit",
+      "Consectetur",
+      "Adipiscing Elit",
+      "Sed Do Eiusmod"
+    ],
+    "primaryCta": {
+      "label": "Book a call",
+      "href": "#contact"
+    },
+    "secondaryCta": {
+      "label": "See how we work",
+      "href": "#about"
+    },
+    "logos": [
+      {
+        "name": "Client One",
+        "image": "https://placehold.co/120x40/png?text=Logo+1",
+        "alt": "Client One logo"
+      },
+      {
+        "name": "Client Two",
+        "image": "https://placehold.co/120x40/png?text=Logo+2",
+        "alt": "Client Two logo"
+      },
+      {
+        "name": "Client Three",
+        "image": "https://placehold.co/120x40/png?text=Logo+3",
+        "alt": "Client Three logo"
+      },
+      {
+        "name": "Client Four",
+        "image": "https://placehold.co/120x40/png?text=Logo+4",
+        "alt": "Client Four logo"
+      },
+      {
+        "name": "Client Five",
+        "image": "https://placehold.co/120x40/png?text=Logo+5",
+        "alt": "Client Five logo"
+      },
+      {
+        "name": "Client Six",
+        "image": "https://placehold.co/120x40/png?text=Logo+6",
+        "alt": "Client Six logo"
+      }
+    ]
+  },
+  "services": {
+    "heading": "Empowering leaders with lorem ipsum dolor sit amet",
+    "description": "Exclusively senior level expertise to solve lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "tabs": [
+      {
+        "slug": "lorem-development",
+        "icon": "cube",
+        "label": "Lorem Development",
+        "image": "https://placehold.co/900x450/png?text=Service+1",
+        "imageAlt": "Team working on lorem development",
+        "body": "Custom lorem ipsum solutions tailored to mid to large-sized dolor sit amet, consectetur adipiscing elit. Utilising a scalable codebase that withstands the test of time."
+      },
+      {
+        "slug": "ipsum-transformation",
+        "icon": "sync",
+        "label": "Ipsum Transformation",
+        "image": "https://placehold.co/900x450/png?text=Service+2",
+        "imageAlt": "Team working on ipsum transformation",
+        "body": "Modernise internal processes and tools by transitioning legacy sed do eiusmod tempor incididunt ut labore et dolore magna aliqua systems into new ones."
+      },
+      {
+        "slug": "dolor-twins",
+        "icon": "layers",
+        "label": "Dolor Twins",
+        "image": "https://placehold.co/900x450/png?text=Service+3",
+        "imageAlt": "Team working on dolor twins",
+        "body": "A precise virtual replica ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip for a precise, predictable future."
+      },
+      {
+        "slug": "sit-amet-training",
+        "icon": "eye",
+        "label": "Sit Amet Training",
+        "image": "https://placehold.co/900x450/png?text=Service+4",
+        "imageAlt": "Team working on sit amet training",
+        "body": "Enhanced learning and engagement duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat with immersive simulation."
+      },
+      {
+        "slug": "consectetur-insourcing",
+        "icon": "network",
+        "label": "Consectetur Insourcing",
+        "image": "https://placehold.co/900x450/png?text=Service+5",
+        "imageAlt": "Team working on consectetur insourcing",
+        "body": "Augmenting development teams excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt to accelerate your goals."
+      }
+    ]
+  },
+  "teamHighlight": {
+    "heading": "Ut enim ad minim veniam, quis nostrud",
+    "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    "authorName": "Jordan Placeholder",
+    "authorRole": "Senior Lorem Ipsum",
+    "authorAvatar": "https://placehold.co/96x96/png?text=JP",
+    "authorAvatarAlt": "Portrait of Jordan Placeholder"
+  },
+  "caseStudies": {
+    "heading": "Excepteur sint occaecat cupidatat non proident",
+    "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus error.",
+    "tabs": [
+      "Lorem Services",
+      "Ipsum Development",
+      "Dolor Insourcing"
+    ],
+    "slides": [
+      {
+        "stat": "20%",
+        "statLabel": "Lorem ipsum dolor sit amet consectetur",
+        "title": "Sed ut perspiciatis unde omnis",
+        "summary": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image": "https://placehold.co/800x600/png?text=Case+Study+1",
+        "imageAlt": "Photo illustrating case study 1: Sed ut perspiciatis unde omnis"
+      },
+      {
+        "stat": "10x",
+        "statLabel": "Ipsum dolor sit amet consectetur adipiscing",
+        "title": "Ut enim ad minima veniam",
+        "summary": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "image": "https://placehold.co/800x600/png?text=Case+Study+2",
+        "imageAlt": "Photo illustrating case study 2: Ut enim ad minima veniam"
+      },
+      {
+        "stat": "3x",
+        "statLabel": "Dolor sit amet consectetur adipiscing elit",
+        "title": "At vero eos et accusamus",
+        "summary": "Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
+        "image": "https://placehold.co/800x600/png?text=Case+Study+3",
+        "imageAlt": "Photo illustrating case study 3: At vero eos et accusamus"
+      }
+    ]
+  },
+  "aboutBlurb": {
+    "heading": "Who we are",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ],
+    "images": [
+      {
+        "src": "https://placehold.co/600x300/png?text=About+1",
+        "alt": "Team collaborating"
+      },
+      {
+        "src": "https://placehold.co/600x300/png?text=About+2",
+        "alt": "Team meeting"
+      }
+    ],
+    "ctaLabel": "Contact us"
+  },
+  "insights": {
+    "heading": "Latest insights",
+    "description": "Explore lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+    "items": [
+      {
+        "date": "August 4, 2026",
+        "category": "Lorem Ipsum",
+        "title": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+        "image": "https://placehold.co/400x260/png?text=Insight+1",
+        "imageAlt": "Illustration for the article \"Sed ut perspiciatis unde omnis iste natus error sit voluptatem\""
+      },
+      {
+        "date": "May 18, 2026",
+        "category": "Dolor Sit Amet",
+        "title": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur",
+        "image": "https://placehold.co/400x260/png?text=Insight+2",
+        "imageAlt": "Illustration for the article \"Nemo enim ipsam voluptatem quia voluptas sit aspernatur\""
+      },
+      {
+        "date": "March 2, 2026",
+        "category": "Consectetur",
+        "title": "Neque porro quisquam est qui dolorem ipsum quia dolor",
+        "image": "https://placehold.co/400x260/png?text=Insight+3",
+        "imageAlt": "Illustration for the article \"Neque porro quisquam est qui dolorem ipsum quia dolor\""
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Hear from our clients",
+    "quotes": [
+      {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+        "name": "Alex Placeholder",
+        "role": "Lorem Ipsum Co.",
+        "avatar": "https://placehold.co/600x800/png?text=Photo+1",
+        "avatarAlt": "Portrait of Alex Placeholder, Lorem Ipsum Co."
+      },
+      {
+        "quote": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "name": "Sam Placeholder",
+        "role": "Dolor Sit Ltd.",
+        "avatar": "https://placehold.co/600x800/png?text=Photo+2",
+        "avatarAlt": "Portrait of Sam Placeholder, Dolor Sit Ltd."
+      },
+      {
+        "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "name": "Taylor Placeholder",
+        "role": "Consectetur Group",
+        "avatar": "https://placehold.co/600x800/png?text=Photo+3",
+        "avatarAlt": "Portrait of Taylor Placeholder, Consectetur Group"
+      },
+      {
+        "quote": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+        "name": "Morgan Placeholder",
+        "role": "Adipiscing Inc.",
+        "avatar": "https://placehold.co/600x800/png?text=Photo+4",
+        "avatarAlt": "Portrait of Morgan Placeholder, Adipiscing Inc."
+      }
+    ]
+  },
+  "contactCta": {
+    "heading": "Book a meeting",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "submitLabel": "Send message",
+    "hearAboutUsOptions": [
+      "Search engine",
+      "Referral",
+      "Social media",
+      "Other"
+    ]
+  },
+  "footer": {
+    "logoImage": "/assets/logo.svg",
+    "logoAlt": "Your Company logo",
+    "companyName": "Your Company",
+    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "servicesHeading": "Services",
+    "servicesLinks": [
+      {
+        "label": "Lorem Development",
+        "href": "#services-lorem-development"
+      },
+      {
+        "label": "Ipsum Transformation",
+        "href": "#services-ipsum-transformation"
+      },
+      {
+        "label": "Dolor Twins",
+        "href": "#services-dolor-twins"
+      },
+      {
+        "label": "Sit Amet Training",
+        "href": "#services-sit-amet-training"
+      },
+      {
+        "label": "Consectetur Insourcing",
+        "href": "#services-consectetur-insourcing"
+      }
+    ],
+    "hoursHeading": "Opening Hours",
+    "hours": [
+      {
+        "day": "Monday - Friday",
+        "hours": "9:00am - 5:00pm"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10:00am - 2:00pm"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "contactHeading": "Contact",
+    "address": "123 Lorem Street, Ipsum City 1010",
+    "email": "hello@yourcompany.com",
+    "phone": "+64 21 123 4567",
+    "socialLinks": [
+      {
+        "platform": "facebook",
+        "label": "Facebook",
+        "href": "#"
+      },
+      {
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "platform": "instagram",
+        "label": "Instagram",
+        "href": "#"
+      },
+      {
+        "platform": "twitter",
+        "label": "Twitter",
+        "href": "#"
+      }
+    ],
+    "showNewsletter": false,
+    "newsletterHeading": "Keep tabs on us",
+    "newsletterDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterSubmitLabel": "Subscribe",
+    "legalLinks": [
+      {
+        "label": "Privacy policy",
+        "href": "#"
+      },
+      {
+        "label": "Terms and conditions",
+        "href": "#"
+      }
+    ],
+    "copyright": "Copyright \u00a9 2026 Your Company Limited. All rights reserved."
+  }
+}
